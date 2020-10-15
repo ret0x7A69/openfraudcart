@@ -197,6 +197,9 @@ namespace App\Http\Controllers\Shop;
 
                                 Setting::set('shop.total_sells', Setting::get('shop.total_sells', 0) + 1);
                             } else {
+                                /*
+                                * New order adding logic
+                                */
                                 $priceInCent = \App\Classes\Rabatt::newprice($product->price_in_cent * $cartItem[1], $product->id, $cartItem[1]);
 
                                 $productContent = '';

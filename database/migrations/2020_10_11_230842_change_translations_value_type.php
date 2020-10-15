@@ -14,6 +14,9 @@ class ChangeTranslationsValueType extends Migration
     public function up()
     {
         Schema::table('translations', function ($table) {
+            /*
+            * Increased size to translate documents
+            */
             $table->longText('value')->change();
         });
     }

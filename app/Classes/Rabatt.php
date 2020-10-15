@@ -37,6 +37,9 @@ namespace App\Classes;
                 }
             }
 
+            /*
+            * Default Rab of 0% instead of 100% lel
+            */
             return 0;
         }
 

@@ -14,6 +14,9 @@ class ChangeUsersOrdersContentType extends Migration
     public function up()
     {
         Schema::table('users_orders', function ($table) {
+            /*
+            * Increased size to sell multiple orders at once
+            */
             $table->longText('content')->change();
         });
     }

@@ -120,6 +120,10 @@ namespace App\Classes;
                 $currency = Setting::getShopCurrency();
             }
 
+
+            /*
+            * Caching BTC Rate to increase performance
+            */
             $currency = strtoupper($currency);
 
             $jsonString = Cache::remember('bitcoin_ticker', 5, function () {

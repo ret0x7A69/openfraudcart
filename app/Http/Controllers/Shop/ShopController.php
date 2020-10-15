@@ -268,6 +268,9 @@ namespace App\Http\Controllers\Shop;
                                 ]),
                             ]);
                         } else {
+                            /*
+                            * New order adding logic
+                            */
                             $productContent = '';
                             $itemIDsToDestroy = [];
                             $productItems = ProductItem::where('product_id', $product->id)->take($amount)->get();
