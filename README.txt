@@ -1,5 +1,3 @@
-#Rewritten and upgraded version of FraudCart
-
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 DEFAULT ADMIN ACCOUNT:
 Admin:123456
